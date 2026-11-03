@@ -1,0 +1,159 @@
+
+.pdf-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(10, 15, 30, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pdf-modal {
+  width: 100%;
+  max-width: 1100px;
+  height: 95vh;
+  background: #f1f3f7;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pdf-header {
+  background: #ffffff;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pdf-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pdf-icon {
+  font-size: 28px;
+}
+
+.pdf-title h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.pdf-title p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.pdf-close {
+  border: none;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 9px 13px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.pdf-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.pdf-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pdf-controls button {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 6px 13px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.pdf-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pdf-controls span {
+  font-size: 13px;
+  color: #334155;
+}
+
+.pdf-content {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25px;
+}
+
+.pdf-content .react-pdf__Page {
+  margin: 0 auto;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pdf-message,
+.pdf-error {
+  margin: auto;
+  font-size: 15px;
+  color: #475569;
+}
+
+.pdf-error {
+  color: #dc2626;
+}
+
+.pdf-footer {
+  padding: 12px 20px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.pdf-footer button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 17px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .pdf-overlay {
+    padding: 5px;
+  }
+
+  .pdf-modal {
+    height: 98vh;
+  }
+
+  .pdf-toolbar {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .pdf-content {
+    padding: 10px;
+  }
+}

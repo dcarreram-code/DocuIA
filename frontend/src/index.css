@@ -1,0 +1,17 @@
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #f7f8fc;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font-family: inherit;
+}
