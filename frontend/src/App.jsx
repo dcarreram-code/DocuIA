@@ -250,10 +250,8 @@ function App() {
 
 
 
-    const invalidFiles = files.filter(
-
-      (file) => !/\\.(pdf|docx)$/i.test(file.name)
-
+   const invalidFiles = files.filter(
+    (file) => !/\.(pdf|docx)$/i.test(file.name)
     );
 
 
